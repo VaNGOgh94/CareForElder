@@ -45,7 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Njegovatelj.cs" />
+    <Compile Include="Osoba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipKorisnika.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
