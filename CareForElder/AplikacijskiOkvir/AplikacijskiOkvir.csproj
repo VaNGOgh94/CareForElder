@@ -48,6 +48,7 @@
     <Compile Include="Korisnik.cs" />
     <Compile Include="Njegovatelj.cs" />
     <Compile Include="Osoba.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rezident.cs" />
     <Compile Include="TipKorisnika.cs" />
