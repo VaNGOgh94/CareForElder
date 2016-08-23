@@ -38,6 +38,7 @@
             this.tbxDatumRođenja = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbxTipKorisnika = new System.Windows.Forms.ComboBox();
+            this.btnRegistriraj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblKorisnickoIme
@@ -123,11 +124,24 @@
             this.cbxTipKorisnika.Size = new System.Drawing.Size(121, 21);
             this.cbxTipKorisnika.TabIndex = 10;
             // 
+            // btnRegistriraj
+            // 
+            this.btnRegistriraj.BackColor = System.Drawing.Color.Red;
+            this.btnRegistriraj.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnRegistriraj.Location = new System.Drawing.Point(267, 144);
+            this.btnRegistriraj.Name = "btnRegistriraj";
+            this.btnRegistriraj.Size = new System.Drawing.Size(95, 113);
+            this.btnRegistriraj.TabIndex = 11;
+            this.btnRegistriraj.Text = "Registriraj";
+            this.btnRegistriraj.UseVisualStyleBackColor = false;
+            this.btnRegistriraj.Click += new System.EventHandler(this.btnRegistriraj_Click);
+            // 
             // Registracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 369);
+            this.Controls.Add(this.btnRegistriraj);
             this.Controls.Add(this.cbxTipKorisnika);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbxDatumRođenja);
@@ -158,5 +172,6 @@
         private System.Windows.Forms.TextBox tbxDatumRođenja;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbxTipKorisnika;
+        private System.Windows.Forms.Button btnRegistriraj;
     }
 }

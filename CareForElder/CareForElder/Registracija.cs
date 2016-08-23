@@ -30,5 +30,31 @@ namespace CareForElder
         {
 
         }
+
+        private bool ProvjeriKorisnickoIme()
+        {
+            //implementacija veze sa bazom - ukoliko postoji isto korisnicko ime da ne da registrirat
+            return true;
+        }
+
+        private void EvidentirajKorisnikaUBazu()
+        {
+            Osoba noviKorisnik = new Osoba();
+            noviKorisnik.DatumRodenja = DateTime.Parse(tbxDatumRođenja.Text);
+            noviKorisnik.KorisnickoIme = tbxKorisnickoIme.Text;
+            noviKorisnik.Ime = tbxIme.Text;
+            noviKorisnik.Prezime = tbxPrezime.Text;
+            Osoba.listaOsoba.Add(noviKorisnik);
+        }
+
+        private void btnRegistriraj_Click(object sender, EventArgs e)
+        {
+            if(ProvjeriKorisnickoIme() == true)
+            {
+                EvidentirajKorisnikaUBazu();
+                this.Close();
+            }
+            
+        }
     }
 }

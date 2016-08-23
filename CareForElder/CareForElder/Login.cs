@@ -19,8 +19,25 @@ namespace CareForElder {
 			//konekcija.Open();
 		}
 
-		private void btnPrijava_Click(object sender, EventArgs e) {
+        private bool ProvjeriKorisnickePodatke()
+        {
+            //implementirat provjeru kor_imena i lozinke
+            return true;
+        }
 
+        private void OtvoriGlavniProzor()
+        {
+            frmGlavna glavnaForma = new frmGlavna();
+            glavnaForma.Show();
+            this.Hide();
+        }
+
+		private void btnPrijava_Click(object sender, EventArgs e) {
+            if(ProvjeriKorisnickePodatke() == true)
+            {
+                //udi u aplikaciju:
+                OtvoriGlavniProzor();
+            }
 		}
 
         private void label3_Click(object sender, EventArgs e)

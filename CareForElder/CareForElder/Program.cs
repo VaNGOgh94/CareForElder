@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AplikacijskiOkvir;
 
 namespace CareForElder {
 	static class Program {
@@ -13,7 +14,9 @@ namespace CareForElder {
 		static void Main() {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Login());
-		}
+            Osoba.listaOsoba = new List<Osoba>();
+            Application.Run(new Login());
+
+        }
 	}
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AplikacijskiOkvir {
-	class Osoba {
+	public class Osoba {
         private string korisnickoIme;
 		private int id;
 		private string ime;
@@ -13,8 +13,8 @@ namespace AplikacijskiOkvir {
 		private TipKorisnika tipKorisnika;
 		private DateTime datumRodenja;
 		private bool online;
-
-		protected int Id {
+        public static List<Osoba> listaOsoba;
+        public int Id {
 			get {
 				return id;
 			}
@@ -24,7 +24,7 @@ namespace AplikacijskiOkvir {
 			}
 		}
 
-		protected string Ime {
+        public string Ime {
 			get {
 				return ime;
 			}
@@ -34,7 +34,7 @@ namespace AplikacijskiOkvir {
 			}
 		}
 
-		protected string Prezime {
+        public string Prezime {
 			get {
 				return prezime;
 			}
@@ -44,7 +44,7 @@ namespace AplikacijskiOkvir {
 			}
 		}
 
-		protected TipKorisnika TipKorisnika {
+        public TipKorisnika TipKorisnika {
 			get {
 				return tipKorisnika;
 			}
