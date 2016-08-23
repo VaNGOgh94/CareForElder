@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AplikacijskiOkvir {
 	class Osoba {
+        private string korisnickoIme;
 		private int id;
 		private string ime;
 		private string prezime;
@@ -72,5 +73,18 @@ namespace AplikacijskiOkvir {
 				online = value;
 			}
 		}
-	}
+
+        public string KorisnickoIme
+        {
+            get
+            {
+                return korisnickoIme;
+            }
+
+            set
+            {
+                korisnickoIme = value;
+            }
+        }
+    }
 }

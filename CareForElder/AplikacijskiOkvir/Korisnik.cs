@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AplikacijskiOkvir {
 	class Korisnik : Osoba {
 		private static Korisnik instance;
-
+        // za login tako da može bit prijavljena samo jedna osoba
 		public static Korisnik Instance {
 			get {
 				if (instance == null) {

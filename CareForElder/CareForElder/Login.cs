@@ -22,5 +22,14 @@ namespace CareForElder {
 		private void btnPrijava_Click(object sender, EventArgs e) {
 
 		}
-	}
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Registracija frmRegistracija = new Registracija(this);
+            //frmRegistracija.ShowDialog();
+            frmRegistracija.Show();
+            //ako stavim samo show onda mogu prozor za registraciju upalit mnogo puta HEHE
+            this.Hide();
+        }
+    }
 }
