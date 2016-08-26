@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
+using AplikacijskiOkvir;
 namespace CareForElder {
 	public partial class Login : Form {
 		public Login() {
 			InitializeComponent();
-			//SqlConnection konekcija = new SqlConnection();
-			//konekcija.ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CareForElderDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-			//konekcija.Open();
+			
+			//SqlDataReader dr = Baza.Instanca.DohvatiDataReader("SELECT * FROM Njegovatelji");
+			//dr.Read();
+			//MessageBox.Show(dr["ime"].ToString());
 		}
 
         private bool ProvjeriKorisnickePodatke()
