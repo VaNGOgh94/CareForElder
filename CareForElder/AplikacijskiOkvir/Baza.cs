@@ -54,7 +54,7 @@ namespace AplikacijskiOkvir {
 		}
 
 		private Baza() {
-			connectionString = "Data Source = mssql4.gear.host; Initial Catalog = careforelderdb; Integrated Security = False; User ID = careforelderdb; Password=Vg65HW5!-q0N;Connect Timeout = 15; Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+			connectionString = "Data Source = mssql4.gear.host; Initial Catalog = careforelderdb; Integrated Security = False; User ID = careforelderdb; Password=Vg65HW5!-q0N;Connect Timeout = 15; Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true";
 			veza = new SqlConnection(connectionString);
 			veza.Open();
 		}

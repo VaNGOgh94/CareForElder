@@ -12,13 +12,10 @@ using System.Data.SqlClient;
 using AplikacijskiOkvir;
 namespace CareForElder {
 	public partial class Login : Form {
+        List<Njegovatelj> listaNjegovatelja = new List<Njegovatelj>();
 		public Login() {
 			InitializeComponent();
-			
-			//SqlDataReader dr = Baza.Instanca.DohvatiDataReader("SELECT * FROM Njegovatelji");
-			//dr.Read();
-			//MessageBox.Show(dr["ime"].ToString());
-		}
+        }
 
         private bool ProvjeriKorisnickePodatke()
         {
